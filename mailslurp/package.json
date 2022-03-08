@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cypress": "^9.5.1",
+    "cypress-recurse": "^1.14.1",
+    "imap-simple": "^5.1.0",
+    "mailparser": "^3.4.0",
+    "mailslurp-client": "^15.7.1",
+    "nodemailer": "^6.7.2"
+  }
+}
