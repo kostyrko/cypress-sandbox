@@ -1,6 +1,10 @@
 /// <reference types="cypress" />
 
 describe("Sign up using mailslurp", () => {
+
+  after(() => {
+    cy.get("[data-cy='confirmed-code']").should('contain', 'Valid confirmation code');
+  })
   it("can generate a new email address and sign up", () => {
     cy.visit("localhost:3000"); 
     let inboxId;
